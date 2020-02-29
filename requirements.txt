@@ -3,3 +3,4 @@ FLASK-RESTful
 FLASK-JWT
 FLASK-SQLAlchemy
 uwsgi
+psycopg2
