@@ -2,4 +2,4 @@ FLASK
 FLASK-RESTful
 FLASK-JWT
 FLASK-SQLAlchemy
-uwgsi
+uwsgi
