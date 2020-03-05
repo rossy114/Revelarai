@@ -1,6 +1,6 @@
 FLASK
 FLASK-RESTful
-FLASK-JWT
+FLASK-JWT-Extended
 FLASK-SQLAlchemy
 uwsgi
 psycopg2
