@@ -37,8 +37,13 @@ class Item(Resource):
             return {"message": "An error occurred inserting the item."}, 500
 
         return item.json(), 201
-
+    
+    @jwt_required
     def delete(self, name):
+        claims = get_jwt_claims()
+        if not claims['is_admin']:
+            return {'message': 'Admin privilege required.'}, 401
+
         item = ItemModel.find_by_name(name)
         if item:
             item.delete_from_db()
